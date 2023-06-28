@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class LevelCreator : MonoBehaviour
 {
-    [SerializeField] TMPro.TextMeshProUGUI totalScoreText;
+    [SerializeField] TextMeshProUGUI totalScoreText;
     [SerializeField] LevelSO[] levels;
     [SerializeField] GameObject endChunk;
     [SerializeField] GameObject deathCube;
@@ -50,7 +51,8 @@ public class LevelCreator : MonoBehaviour
 
         // Adding end chunk after creating all desired chunks
         chunkPosition.x += endChunk.transform.localScale.x / 2;
-        Instantiate(endChunk, chunkPosition, Quaternion.identity, transform);
+        endChunk.transform.position = chunkPosition;
+        endChunk.transform.parent = transform;
         chunkPosition.x += endChunk.transform.localScale.x / 2;
 
         // Adjusting death cube length based on all level chunks length

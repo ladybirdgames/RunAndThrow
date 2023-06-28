@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.unity.cinemachine": {
+      "version": "file:C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Resources/PackageManager/Editor/com.unity.cinemachine-2.6.10.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {}
+    },
     "com.unity.collab-proxy": {
       "version": "1.13.5",
       "depth": 0,

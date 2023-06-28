@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class DeathTrigger : MonoBehaviour
 {
-    GameObject gameCanvas;
+    [SerializeField] GameObject gameCanvas;
 
-    private void Start()
-    {
-        gameCanvas = GameObject.FindGameObjectWithTag("GameCanvas");
-    }
+   
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Death"))
         {
             // child 1 is lose panel
             gameCanvas.transform.GetChild(1).gameObject.SetActive(true);

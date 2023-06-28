@@ -11,6 +11,7 @@ TagManager:
   - End
   - WinPanel
   - GameCanvas
+  - Death
   layers:
   - Default
   - TransparentFX

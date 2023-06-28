@@ -10,7 +10,7 @@ public class ThrowTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<Player>().StartThrowPhase(targets);
+            other.GetComponent<Thrower>().StartThrowPhase(targets);
         }
     }
 }

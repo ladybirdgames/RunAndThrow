@@ -1,15 +1,12 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EndTrigger : MonoBehaviour
 {
-    GameObject gameCanvas;
+    [SerializeField] GameObject gameCanvas;
 
-    private void Start()
-    {
-        gameCanvas = GameObject.FindGameObjectWithTag("GameCanvas");
-    }
+ 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
