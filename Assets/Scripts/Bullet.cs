@@ -6,8 +6,11 @@ using Cinemachine;
 
 public class Bullet : MonoBehaviour
 {
+
     [SerializeField] Transform bulletParent;
     [SerializeField] Thrower thrower;
+
+
 
     [SerializeField] CMCamerasController cmCamerasController;
 
